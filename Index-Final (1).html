@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lamplight Prep | Founded by Ms Jiang</title>
+<meta name="description" content="Lamplight Prep is an independent student activity planning studio founded by Ms Jiang, focused on youth leadership and sustainable development.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--purple:#7C3AED;--light:#F5F3FF;--dark:#111827;--gray:#6B7280}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter','Noto Sans SC',sans-serif;background:#fff;color:var(--dark);line-height:1.7}
+header{position:sticky;top:0;background:rgba(255,255,255,0.9);backdrop-filter:blur(10px);border-bottom:1px solid #E5E7EB;z-index:10}
+.nav{max-width:1120px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:14px 20px}
+.logo{font-weight:700;font-size:18px;letter-spacing:0.5px}
+.logo span{color:var(--purple)}
+.nav a{margin-left:18px;text-decoration:none;color:var(--dark);font-size:14px}
+.hero{max-width:1120px;margin:auto;padding:80px 20px 40px;display:grid;grid-template-columns:1.2fr 0.8fr;gap:40px;align-items:center}
+.hero h1{font-size:42px;line-height:1.15;margin-bottom:16px}
+.hero h1 em{color:var(--purple);font-style:normal}
+.hero p{color:var(--gray);font-size:16px;margin-bottom:20px}
+.btn{display:inline-block;background:var(--purple);color:#fff;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:600;margin-right:10px}
+.btn.outline{background:#fff;color:var(--purple);border:1px solid var(--purple)}
+.stats{display:flex;gap:24px;margin-top:24px}
+.stat b{font-size:24px;display:block}
+.stat span{font-size:12px;color:var(--gray)}
+.card-grid{max-width:1120px;margin:20px auto;padding:0 20px;display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px}
+.card{border:1px solid #E5E7EB;border-radius:14px;padding:18px;background:#fff;transition:0.2s}
+.card:hover{box-shadow:0 10px 30px rgba(124,58,237,0.12);transform:translateY(-2px)}
+.card .tag{font-size:11px;background:var(--light);color:var(--purple);padding:3px 8px;border-radius:999px;display:inline-block;margin-bottom:8px}
+.card h3{font-size:15px;margin-bottom:6px}
+.card h3 a{color:var(--dark);text-decoration:none}
+.card h3 a:hover{color:var(--purple)}
+.card p{font-size:13px;color:var(--gray);margin-bottom:10px}
+.card .links a{font-size:12px;color:var(--purple);text-decoration:none;margin-right:10px}
+.section{max-width:1120px;margin:auto;padding:60px 20px}
+.section h2{font-size:28px;margin-bottom:12px}
+.table-wrap{overflow:auto;border:1px solid #E5E7EB;border-radius:12px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{background:var(--purple);color:#fff;padding:10px;text-align:left}
+td{padding:10px;border-bottom:1px solid #F3F4F6}
+tr:nth-child(even){background:#FAFAFF}
+a.link{color:var(--purple);text-decoration:none}
+footer{border-top:1px solid #E5E7EB;padding:30px 20px;text-align:center;color:var(--gray);font-size:12px;margin-top:40px}
+@media(max-width:800px){.hero{grid-template-columns:1fr}.hero h1{font-size:32px}}
+</style>
+</head>
+<body>
+<header>
+<div class="nav">
+<div class="logo">Lamplight <span>Prep</span> <small style="font-weight:400;color:#6B7280;margin-left:6px">Founded by Ms Jiang</small></div>
+<div><a href="#projects">Projects</a><a href="#unsdg">UNSDG</a><a href="https://github.com">GitHub</a></div>
+</div>
+</header>
+
+<div class="hero">
+<div>
+<h1>Student Activities<br><em>Designed by Ms Jiang</em></h1>
+<p>Lamplight Prep is an independent student activity planning studio founded by Ms Jiang, focused on youth leadership and sustainable development project-based learning. Led students from Grade 7 to undergrad to complete entirely student-run projects.</p>
+<a class="btn" href="#projects">View 14 Projects</a>
+<a class="btn outline" href="https://www.aecglobal.org/clubs" target="_blank">Original AEC Archive</a>
+<div class="stats">
+<div class="stat"><b>14</b><span>Student Clubs</span></div>
+<div class="stat"><b>100% </b><span>Student-run</span></div>
+<div class="stat"><b>17</b><span>UNSDGs Aligned</span></div>
+</div>
+</div>
+<div>
+<div style="background:var(--light);border-radius:16px;padding:20px">
+<h4 style="margin-bottom:10px">Founder</h4>
+<p style="font-size:14px"><b>Ms Jiang</b><br>专注学生活动规划 / Student Activity Planning<br>Former AEC Foundation Project Lead, now independent studio Lamplight Prep. Led RUP, PPR, Medical, Special Education and 10+ more student clubs.</p>
+</div>
+</div>
+</div>
+
+<div class="section" id="projects">
+<h2>14 Projects Portfolio</h2>
+<p style="color:var(--gray);margin-bottom:18px">所有项目名称保留英文原名，每个均附AEC官网原始链接以供查验，溯源真实性。</p>
+<div class="card-grid" id="grid"></div>
+</div>
+
+<div class="section" id="table">
+<h2>Detailed Table with Official Links</h2>
+<div class="table-wrap">
+<table id="clubTable"><thead><tr><th>Category</th><th>Project Name (Original)</th><th>Core Type</th><th>UNSDG</th><th>Official Link</th></tr></thead><tbody></tbody></table>
+</div>
+</div>
+
+<div class="section" id="unsdg">
+<h2>Alignment with UNSDGs</h2>
+<p style="color:var(--gray);max-width:760px">All projects are aligned with United Nations Sustainable Development Goals. Each project selects 1-2 main SDGs and is evaluated by SDG indicators. Student portfolios are built in SDG language.</p>
+<ul style="margin-top:16px;line-height:2;font-size:14px">
+<li><b>SDG3 Good Health:</b> Young Doctors / Medical Club, The Bloody Raven</li>
+<li><b>SDG4 Quality Education:</b> Special Education Club, CAD for All / BEAM, Agora / Coding, TED-Ed Club / Outwrite, Family Forum</li>
+<li><b>SDG5 Gender Equality:</b> The Bloody Raven</li>
+<li><b>SDG8/9 Decent Work & Innovation:</b> Young Entrepreneurs, Business of the Future, CAD, Agora</li>
+<li><b>SDG10 Reduced Inequalities:</b> Special Education Club</li>
+<li><b>SDG12/13/14/15 Responsible Consumption, Climate, Life Below Water & Land:</b> RUP, PPR, Climate Justice Global Alliance, Reimagined Fashion Upcycling Club, MGL</li>
+<li><b>SDG17 Partnerships:</b> Climate Justice, MGL, Family Forum</li>
+</ul>
+</div>
+
+<footer>
+Lamplight Prep | Founded by Ms Jiang | Student Activity Planning Studio<br>
+Original archive: aecglobal.org | This site is independent, links provided for verification only.
+</footer>
+
+<script>
+const projects=[
+{cat:"Environment",name:"Renewable Urban Pioneers (RUP)",type:"Marine Plastic & Facemask Pollution - SAVE THE SEA TO SEE THE FUTURE - UN Partnership Program SDG14",sdg:"SDG14,12,13",links:["https://www.aecglobal.org/clubs/rup-2022","https://sdgs.un.org/partnerships/1-aec-rup-club-save-ocean-2-aec-ppr-club-plastic-pollution-reduction"]},
+{cat:"Environment",name:"Plastic Pollution Reduction (PPR)",type:"Plastic Pollution Reduction - 8M tons plastic research, microplastics",sdg:"SDG12,14,15",links:["https://www.aecglobal.org/clubs/ppr","https://sdgs.un.org/partnerships/1-aec-rup-club-save-ocean-2-aec-ppr-club-plastic-pollution-reduction"]},
+{cat:"Environment",name:"Climate Justice Global Alliance (CJGA)",type:"Climate Justice Advocacy - 100+ members, 6 congressional districts, 1000 books donated",sdg:"SDG13,17",links:["https://www.aecglobal.org/groups/cjga"]},
+{cat:"Environment",name:"Reimagined Fashion Upcycling Club",type:"Sustainable Fashion - upcycling donated clothing, anti-fast-fashion, charity fashion show",sdg:"SDG12",links:["https://www.aecglobal.org/groups/reimagined"]},
+{cat:"Health",name:"Young Doctors / Medical Club",type:"Medical science, first aid, hospital shadowing, public health, sustainable development",sdg:"SDG3",links:["https://www.aecglobal.org/groups"]},
+{cat:"Health",name:"The Bloody Raven",type:"Women's health - creativity, art, education, comfort and shelter",sdg:"SDG3,5",links:["https://www.aecglobal.org/groups"]},
+{cat:"Education Equity",name:"Special Education Club",type:"Inclusive education - autism awareness book, therapy center volunteering, charity concert $1000+ raised",sdg:"SDG4,10",links:["https://www.aecglobal.org/aec-2022-summer-activities/p/aec-special-education-club","https://www.aecglobal.org/clubs"]},
+{cat:"Education Equity",name:"CAD for All",type:"Engineering education equity - CAD & 3D modeling for under-resourced students",sdg:"SDG4,9",links:["https://www.aecglobal.org/groups/cad-for-all"]},
+{cat:"Education Equity",name:"The BEAM Organization",type:"BEAM - Engineering & mentorship, student-run",sdg:"SDG4,9",links:["https://www.aecglobal.org/groups/beam"]},
+{cat:"Education Equity",name:"Agora / Coding Club",type:"10-week Python intensive - global volunteers, free coding clubs",sdg:"SDG4,9",links:["https://www.aecglobal.org/clubs/agora"]},
+{cat:"Education Equity",name:"TED-Ed Club",type:"Public speaking - TED official authorized Student Talks",sdg:"SDG4",links:["https://www.aecglobal.org/clubs/teded-club"]},
+{cat:"Leadership",name:"Outwrite",type:"Writing & expression - student writing group",sdg:"SDG4",links:["https://www.aecglobal.org/clubs"]},
+{cat:"Leadership",name:"Young Entrepreneurs",type:"Youth entrepreneurship - student business incubator",sdg:"SDG8,9",links:["https://www.aecglobal.org/clubs"]},
+{cat:"Leadership",name:"Business of the Future",type:"Future business models - student-run",sdg:"SDG8,12",links:["https://www.aecglobal.org/clubs"]},
+{cat:"Leadership",name:"Make, Give, Love (MGL)",type:"Charity handmade & fundraising sale - community service",sdg:"SDG12,17",links:["https://www.aecglobal.org/clubs"]},
+{cat:"Leadership",name:"AEC Family Forum",type:"Family education & community forum",sdg:"SDG4,17",links:["https://www.aecglobal.org/clubs"]},
+];
+
+const grid=document.getElementById('grid');
+const tbody=document.querySelector('#clubTable tbody');
+projects.forEach(p=>{
+ const card=document.createElement('div');card.className='card';
+ card.innerHTML=`<div class="tag">${p.cat} • ${p.sdg}</div><h3><a href="${p.links[0]}" target="_blank">${p.name}</a></h3><p>${p.type}</p><div class="links">${p.links.map(l=>`<a href="${l}" target="_blank">Official ↗</a>`).join('')}</div>`;
+ grid.appendChild(card);
+ const tr=document.createElement('tr');
+ tr.innerHTML=`<td>${p.cat}</td><td><a class="link" href="${p.links[0]}" target="_blank">${p.name}</a></td><td>${p.type}</td><td>${p.sdg}</td><td>${p.links.map(l=>`<a class="link" href="${l}" target="_blank">Link</a>`).join(' ')}</td>`;
+ tbody.appendChild(tr);
+});
+</script>
+</body>
+</html>
